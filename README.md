@@ -8,4 +8,7 @@ Voy a ir subiendo los challenges de [codember](https://codember.dev) de [@midude
 submit rauch
 submit 2023-12-01
 ↑ ↑ ↓ ↓ ← → ← → B A
+submit html
+confetti
+submit itsmagic
 ```
