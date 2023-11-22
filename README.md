@@ -4,6 +4,8 @@ Voy a ir subiendo los challenges de [codember](https://codember.dev) de [@midude
 
 ### 🤫 Secretos 🤫
 
+> Contraseña de Administrador: `nljzuyfzb`
+
 ```
 submit rauch
 submit 2023-12-01
@@ -11,4 +13,7 @@ submit 2023-12-01
 submit html
 confetti
 submit itsmagic
+submit bgamidqewtbus
+submit Altman
+do a barrel roll
 ```
