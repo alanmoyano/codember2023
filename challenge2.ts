@@ -1,3 +1,7 @@
+import { getData } from "./getData"
+
+const data = await getData("https://codember.dev/data/message_02.txt")
+
 const reto2 = (text: string): string => {
   let output = ""
   let number = 0
@@ -13,8 +17,4 @@ const reto2 = (text: string): string => {
   return output
 }
 
-console.log(
-  reto2(
-    "&###@&*&###@@##@##&######@@#####@#@#@#@##@@@@@@@@@@@@@@@*&&@@@@@@@@@####@@@@@@@@@#########&#&##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@&"
-  )
-)
+console.log(reto2(data))

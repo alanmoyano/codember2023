@@ -1,6 +1,10 @@
-// llaveS casa CASA casa llaves -> llaves2casa3
-// taza ta za taza -> taza2ta1za1
-// casas casa casasas -> casas1casa1casas1
+import { getData } from "./getData"
+
+const data: string[] = (
+  await getData("https://codember.dev/data/message_01.txt")
+)
+  .slice(0, -1)
+  .split(" ")
 
 const reto1 = (texts: string[]) => {
   const textsLower = texts.map((text) => text.toLowerCase())
@@ -29,3 +33,5 @@ const reto1 = (texts: string[]) => {
 
   return output
 }
+
+console.log(reto1(data))
