@@ -16,4 +16,5 @@ submit itsmagic
 submit bgamidqewtbus
 submit Altman
 do a barrel roll
+ping midu.dev
 ```
