@@ -7,11 +7,8 @@ const reto5 = (database: string) => {
     const [id, username, email, age, location] = user.split(",")
 
     if (
-      !id ||
       !id?.match(/[a-zA-z0-9]/g) ||
-      !username ||
       !username?.match(/[a-zA-z0-9]/g) ||
-      !email ||
       !email?.match(/\w+\@\w+\.com/g) ||
       (age && !age.match(/\d/g)) ||
       (location && !location.match(/[a-zA-z0-9]/g))
