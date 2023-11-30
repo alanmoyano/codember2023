@@ -6,17 +6,15 @@ function reto5(database: string) {
   const invalidUsers = database.split("\n").filter((user) => {
     const [id, username, email, age, location] = user.split(",")
 
-    const alfaNum = new RegExp("[^a-zA-Z0-9]")
-    const emailReg = /[a-zA-Z0-9_]+@[a-zA-Z0-9_]+\.com/g
+    const notAlfaNum = /[^a-zA-Z0-9]/g
+    const emailReg = /\w+@\w+\.com/g
+    const chars = /[a-zA-Z]/g
 
     if (
-      !id ||
-      !username ||
-      !email ||
       (age && !Number(age)) ||
-      (location && !/[a-zA-Z]/g.test(location)) ||
-      alfaNum.test(id) ||
-      alfaNum.test(username) ||
+      (location && !chars.test(location)) ||
+      notAlfaNum.test(id) ||
+      notAlfaNum.test(username) ||
       !emailReg.test(email)
     )
       return true
