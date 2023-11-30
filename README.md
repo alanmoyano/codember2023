@@ -17,4 +17,7 @@ submit bgamidqewtbus
 submit Altman
 do a barrel roll
 ping midu.dev
+submit bug
+play tetris
+npm install adventjs
 ```
