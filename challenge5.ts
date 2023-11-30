@@ -9,10 +9,16 @@ function reto5(database: string) {
     const alfaNum = new RegExp("[^a-zA-Z0-9]")
     const emailReg = /[a-zA-Z0-9_]+@[a-zA-Z0-9_]+\.com/g
 
-    if (!id || !username || !email) return true
-    if (age && !Number(age)) return true
-    if (location && !/[a-zA-Z]/g.test(location)) return true
-    if (alfaNum.test(id) || alfaNum.test(username) || !emailReg.test(email))
+    if (
+      !id ||
+      !username ||
+      !email ||
+      (age && !Number(age)) ||
+      (location && !/[a-zA-Z]/g.test(location)) ||
+      alfaNum.test(id) ||
+      alfaNum.test(username) ||
+      !emailReg.test(email)
+    )
       return true
   })
 
